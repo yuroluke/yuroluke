@@ -3,43 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的個人頁面</title>
+    <title>我的個人網頁</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            box-sizing: border-box;
         }
 
-        .container {
-            margin-top: 50px;
+        body, html {
+            height: 100%;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: white;
         }
 
-        img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border: 4px solid #333;
+        .hero {
+            background: url('myphoto.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #333;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
         }
 
         h1 {
-            color: #333;
+            font-size: 7vw;
+            font-weight: 900;
+            letter-spacing: 5px;
         }
 
         p {
-            color: #666;
+            margin-top: 15px;
+            font-size: 1.2em;
+            letter-spacing: 1px;
+        }
+
+        .pdf-links {
+            margin-top: 40px;
+        }
+
+        .pdf-links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 25px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        .pdf-links a:hover {
+            background-color: white;
+            color: #333;
         }
     </style>
-</head>
-<body>
-
-    <div class="container">
-        <h1>歡迎來到我的個人頁面！</h1>
-        <img src="your-photo.jpg" alt="個人照片">
-        <p>這是我的個人網站，感謝你來訪！</p>
-    </div>
-
-</body>
-</html>
+</hea
